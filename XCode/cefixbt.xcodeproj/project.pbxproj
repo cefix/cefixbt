@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D4F412C70F5BE44E0052261D /* INSTALL */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D4F412E40F5BE4A50052261D /* Build configuration list for PBXAggregateTarget "INSTALL" */;
+			buildPhases = (
+				D4F412C60F5BE44E0052261D /* ShellScript */,
+			);
+			dependencies = (
+				D4F412CD0F5BE4510052261D /* PBXTargetDependency */,
+			);
+			name = INSTALL;
+			productName = INSTALL;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D07F2BE0486CC7A007CD1D0 /* cefixbt_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* cefixbt_Prefix.pch */; settings = {ATTRIBUTES = (); }; };
+		8D07F2C00486CC7A007CD1D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8D07F2C40486CC7A007CD1D0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB77AAFE841565C02AAC07 /* Carbon.framework */; };
+		D4C9FFF9102AEECA00C44B58 /* cefixbt.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D07F2C80486CC7A007CD1D0 /* cefixbt.framework */; };
+		D4D2E6BB1303D8E900E705FE /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6AF1303D8E900E705FE /* Utils.cpp */; };
+		D4D2E6BC1303D8E900E705FE /* TransformTripleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B01303D8E900E705FE /* TransformTripleBuffer.cpp */; };
+		D4D2E6BD1303D8E900E705FE /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B11303D8E900E705FE /* Shape.cpp */; };
+		D4D2E6BF1303D8E900E705FE /* RigidBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B31303D8E900E705FE /* RigidBody.cpp */; };
+		D4D2E6C01303D8E900E705FE /* PhysicsThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B41303D8E900E705FE /* PhysicsThread.cpp */; };
+		D4D2E6C11303D8E900E705FE /* PhysicsController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B51303D8E900E705FE /* PhysicsController.cpp */; };
+		D4D2E6C21303D8E900E705FE /* MotionState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B61303D8E900E705FE /* MotionState.cpp */; };
+		D4D2E6C41303D8E900E705FE /* DebugPhysicsDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B81303D8E900E705FE /* DebugPhysicsDrawer.cpp */; };
+		D4D2E6C51303D8E900E705FE /* Constraints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6B91303D8E900E705FE /* Constraints.cpp */; };
+		D4D2E6C61303D8E900E705FE /* AppController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E6BA1303D8E900E705FE /* AppController.cpp */; };
+		D4D2E6D31303D8F900E705FE /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6C81303D8F900E705FE /* Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6D41303D8F900E705FE /* TransformTripleBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6C91303D8F900E705FE /* TransformTripleBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6D51303D8F900E705FE /* Shape.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6CA1303D8F900E705FE /* Shape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6D71303D8F900E705FE /* RigidBody.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6CC1303D8F900E705FE /* RigidBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6D81303D8F900E705FE /* PhysicsThread.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6CD1303D8F900E705FE /* PhysicsThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6D91303D8F900E705FE /* PhysicsController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6CE1303D8F900E705FE /* PhysicsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6DA1303D8F900E705FE /* MotionState.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6CF1303D8F900E705FE /* MotionState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6DB1303D8F900E705FE /* DebugPhysicsDrawer.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6D01303D8F900E705FE /* DebugPhysicsDrawer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6DC1303D8F900E705FE /* Constraints.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6D11303D8F900E705FE /* Constraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E6DD1303D8F900E705FE /* AppController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2E6D21303D8F900E705FE /* AppController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D2E70B1303DA1D00E705FE /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E7081303DA1D00E705FE /* libLinearMath.a */; };
+		D4D2E70C1303DA1D00E705FE /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E7091303DA1D00E705FE /* libBulletDynamics.a */; };
+		D4D2E70D1303DA1D00E705FE /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E70A1303DA1D00E705FE /* libBulletCollision.a */; };
+		D4D2E7111303DA3400E705FE /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E7101303DA3400E705FE /* libBulletSoftBody.a */; };
+		D4D6B2CA0E827D1A00F37329 /* OpenThreads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6B2C20E827D1A00F37329 /* OpenThreads.framework */; };
+		D4D6B2CC0E827D1A00F37329 /* osgDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6B2C40E827D1A00F37329 /* osgDB.framework */; };
+		D4D6B2CD0E827D1A00F37329 /* osgGA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6B2C50E827D1A00F37329 /* osgGA.framework */; };
+		D4D6B2CE0E827D1A00F37329 /* osgText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6B2C60E827D1A00F37329 /* osgText.framework */; };
+		D4D6B2CF0E827D1A00F37329 /* osgUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6B2C70E827D1A00F37329 /* osgUtil.framework */; };
+		D4D6B2D00E827D1A00F37329 /* osgViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6B2C80E827D1A00F37329 /* osgViewer.framework */; };
+		D4D6B3C30E82807F00F37329 /* osg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D6B2C30E827D1A00F37329 /* osg.framework */; };
+		D4F412BD0F5BE3EA0052261D /* cefix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F412BC0F5BE3EA0052261D /* cefix.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4F412CC0F5BE4510052261D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
+			remoteInfo = cefixcv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4C90018102AEEF200C44B58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../../../../libs;
+			dstSubfolderSpec = 16;
+			files = (
+				D4C9FFF9102AEECA00C44B58 /* cefixbt.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08FB77AAFE841565C02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32BAE0B70371A74B00C91783 /* cefixbt_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cefixbt_Prefix.pch; path = ../src/cefixbt_Prefix.pch; sourceTree = "<group>"; };
+		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D07F2C80486CC7A007CD1D0 /* cefixbt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cefixbt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D2E6AF1303D8E900E705FE /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		D4D2E6B01303D8E900E705FE /* TransformTripleBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformTripleBuffer.cpp; sourceTree = "<group>"; };
+		D4D2E6B11303D8E900E705FE /* Shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		D4D2E6B31303D8E900E705FE /* RigidBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RigidBody.cpp; sourceTree = "<group>"; };
+		D4D2E6B41303D8E900E705FE /* PhysicsThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsThread.cpp; sourceTree = "<group>"; };
+		D4D2E6B51303D8E900E705FE /* PhysicsController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsController.cpp; sourceTree = "<group>"; };
+		D4D2E6B61303D8E900E705FE /* MotionState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MotionState.cpp; sourceTree = "<group>"; };
+		D4D2E6B81303D8E900E705FE /* DebugPhysicsDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugPhysicsDrawer.cpp; sourceTree = "<group>"; };
+		D4D2E6B91303D8E900E705FE /* Constraints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Constraints.cpp; sourceTree = "<group>"; };
+		D4D2E6BA1303D8E900E705FE /* AppController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppController.cpp; sourceTree = "<group>"; };
+		D4D2E6C81303D8F900E705FE /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = cefixbt/Utils.h; sourceTree = "<group>"; };
+		D4D2E6C91303D8F900E705FE /* TransformTripleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransformTripleBuffer.h; path = cefixbt/TransformTripleBuffer.h; sourceTree = "<group>"; };
+		D4D2E6CA1303D8F900E705FE /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shape.h; path = cefixbt/Shape.h; sourceTree = "<group>"; };
+		D4D2E6CC1303D8F900E705FE /* RigidBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RigidBody.h; path = cefixbt/RigidBody.h; sourceTree = "<group>"; };
+		D4D2E6CD1303D8F900E705FE /* PhysicsThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsThread.h; path = cefixbt/PhysicsThread.h; sourceTree = "<group>"; };
+		D4D2E6CE1303D8F900E705FE /* PhysicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhysicsController.h; path = cefixbt/PhysicsController.h; sourceTree = "<group>"; };
+		D4D2E6CF1303D8F900E705FE /* MotionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotionState.h; path = cefixbt/MotionState.h; sourceTree = "<group>"; };
+		D4D2E6D01303D8F900E705FE /* DebugPhysicsDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebugPhysicsDrawer.h; path = cefixbt/DebugPhysicsDrawer.h; sourceTree = "<group>"; };
+		D4D2E6D11303D8F900E705FE /* Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constraints.h; path = cefixbt/Constraints.h; sourceTree = "<group>"; };
+		D4D2E6D21303D8F900E705FE /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = cefixbt/AppController.h; sourceTree = "<group>"; };
+		D4D2E7081303DA1D00E705FE /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = ../../3rdParty/bullet/lib/libLinearMath.a; sourceTree = SOURCE_ROOT; };
+		D4D2E7091303DA1D00E705FE /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = ../../3rdParty/bullet/lib/libBulletDynamics.a; sourceTree = SOURCE_ROOT; };
+		D4D2E70A1303DA1D00E705FE /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = ../../3rdParty/bullet/lib/libBulletCollision.a; sourceTree = SOURCE_ROOT; };
+		D4D2E7101303DA3400E705FE /* libBulletSoftBody.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletSoftBody.a; path = ../../3rdParty/bullet/lib/libBulletSoftBody.a; sourceTree = SOURCE_ROOT; };
+		D4D6B2C20E827D1A00F37329 /* OpenThreads.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenThreads.framework; path = ../../libs/frameworks/OpenThreads.framework; sourceTree = SOURCE_ROOT; };
+		D4D6B2C30E827D1A00F37329 /* osg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osg.framework; path = ../../libs/frameworks/osg.framework; sourceTree = SOURCE_ROOT; };
+		D4D6B2C40E827D1A00F37329 /* osgDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgDB.framework; path = ../../libs/frameworks/osgDB.framework; sourceTree = SOURCE_ROOT; };
+		D4D6B2C50E827D1A00F37329 /* osgGA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgGA.framework; path = ../../libs/frameworks/osgGA.framework; sourceTree = SOURCE_ROOT; };
+		D4D6B2C60E827D1A00F37329 /* osgText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgText.framework; path = ../../libs/frameworks/osgText.framework; sourceTree = SOURCE_ROOT; };
+		D4D6B2C70E827D1A00F37329 /* osgUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgUtil.framework; path = ../../libs/frameworks/osgUtil.framework; sourceTree = SOURCE_ROOT; };
+		D4D6B2C80E827D1A00F37329 /* osgViewer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = osgViewer.framework; path = ../../libs/frameworks/osgViewer.framework; sourceTree = SOURCE_ROOT; };
+		D4F412BC0F5BE3EA0052261D /* cefix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cefix.framework; path = ../../libs/cefix.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D07F2C30486CC7A007CD1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D6B3C30E82807F00F37329 /* osg.framework in Frameworks */,
+				8D07F2C40486CC7A007CD1D0 /* Carbon.framework in Frameworks */,
+				D4D6B2CA0E827D1A00F37329 /* OpenThreads.framework in Frameworks */,
+				D4D6B2CC0E827D1A00F37329 /* osgDB.framework in Frameworks */,
+				D4D6B2CD0E827D1A00F37329 /* osgGA.framework in Frameworks */,
+				D4D6B2CE0E827D1A00F37329 /* osgText.framework in Frameworks */,
+				D4D6B2CF0E827D1A00F37329 /* osgUtil.framework in Frameworks */,
+				D4D6B2D00E827D1A00F37329 /* osgViewer.framework in Frameworks */,
+				D4F412BD0F5BE3EA0052261D /* cefix.framework in Frameworks */,
+				D4D2E70B1303DA1D00E705FE /* libLinearMath.a in Frameworks */,
+				D4D2E70C1303DA1D00E705FE /* libBulletDynamics.a in Frameworks */,
+				D4D2E70D1303DA1D00E705FE /* libBulletCollision.a in Frameworks */,
+				D4D2E7111303DA3400E705FE /* libBulletSoftBody.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D07F2C80486CC7A007CD1D0 /* cefixbt.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* cefixcv */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ACFE841707C02AAC07 /* Source */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+			);
+			name = cefixcv;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2E7101303DA3400E705FE /* libBulletSoftBody.a */,
+				D4D2E7081303DA1D00E705FE /* libLinearMath.a */,
+				D4D2E7091303DA1D00E705FE /* libBulletDynamics.a */,
+				D4D2E70A1303DA1D00E705FE /* libBulletCollision.a */,
+				D4F412BC0F5BE3EA0052261D /* cefix.framework */,
+				D4D6B2C20E827D1A00F37329 /* OpenThreads.framework */,
+				D4D6B2C30E827D1A00F37329 /* osg.framework */,
+				D4D6B2C40E827D1A00F37329 /* osgDB.framework */,
+				D4D6B2C50E827D1A00F37329 /* osgGA.framework */,
+				D4D6B2C60E827D1A00F37329 /* osgText.framework */,
+				D4D6B2C70E827D1A00F37329 /* osgUtil.framework */,
+				D4D6B2C80E827D1A00F37329 /* osgViewer.framework */,
+				08FB77AAFE841565C02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				32BAE0B70371A74B00C91783 /* cefixbt_Prefix.pch */,
+				D4D6B2B90E827CDF00F37329 /* src */,
+				D4D6B2BB0E827CDF00F37329 /* include */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		D4D6B2B90E827CDF00F37329 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2E6AF1303D8E900E705FE /* Utils.cpp */,
+				D4D2E6B01303D8E900E705FE /* TransformTripleBuffer.cpp */,
+				D4D2E6B11303D8E900E705FE /* Shape.cpp */,
+				D4D2E6B31303D8E900E705FE /* RigidBody.cpp */,
+				D4D2E6B41303D8E900E705FE /* PhysicsThread.cpp */,
+				D4D2E6B51303D8E900E705FE /* PhysicsController.cpp */,
+				D4D2E6B61303D8E900E705FE /* MotionState.cpp */,
+				D4D2E6B81303D8E900E705FE /* DebugPhysicsDrawer.cpp */,
+				D4D2E6B91303D8E900E705FE /* Constraints.cpp */,
+				D4D2E6BA1303D8E900E705FE /* AppController.cpp */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		D4D6B2BB0E827CDF00F37329 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2E6C81303D8F900E705FE /* Utils.h */,
+				D4D2E6C91303D8F900E705FE /* TransformTripleBuffer.h */,
+				D4D2E6CA1303D8F900E705FE /* Shape.h */,
+				D4D2E6CC1303D8F900E705FE /* RigidBody.h */,
+				D4D2E6CD1303D8F900E705FE /* PhysicsThread.h */,
+				D4D2E6CE1303D8F900E705FE /* PhysicsController.h */,
+				D4D2E6CF1303D8F900E705FE /* MotionState.h */,
+				D4D2E6D01303D8F900E705FE /* DebugPhysicsDrawer.h */,
+				D4D2E6D11303D8F900E705FE /* Constraints.h */,
+				D4D2E6D21303D8F900E705FE /* AppController.h */,
+			);
+			name = include;
+			path = ../include;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D07F2BD0486CC7A007CD1D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D07F2BE0486CC7A007CD1D0 /* cefixbt_Prefix.pch in Headers */,
+				D4D2E6D31303D8F900E705FE /* Utils.h in Headers */,
+				D4D2E6D41303D8F900E705FE /* TransformTripleBuffer.h in Headers */,
+				D4D2E6D51303D8F900E705FE /* Shape.h in Headers */,
+				D4D2E6D71303D8F900E705FE /* RigidBody.h in Headers */,
+				D4D2E6D81303D8F900E705FE /* PhysicsThread.h in Headers */,
+				D4D2E6D91303D8F900E705FE /* PhysicsController.h in Headers */,
+				D4D2E6DA1303D8F900E705FE /* MotionState.h in Headers */,
+				D4D2E6DB1303D8F900E705FE /* DebugPhysicsDrawer.h in Headers */,
+				D4D2E6DC1303D8F900E705FE /* Constraints.h in Headers */,
+				D4D2E6DD1303D8F900E705FE /* AppController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D07F2BC0486CC7A007CD1D0 /* cefixbt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "cefixbt" */;
+			buildPhases = (
+				8D07F2BD0486CC7A007CD1D0 /* Headers */,
+				8D07F2BF0486CC7A007CD1D0 /* Resources */,
+				8D07F2C10486CC7A007CD1D0 /* Sources */,
+				8D07F2C30486CC7A007CD1D0 /* Frameworks */,
+				D4C90018102AEEF200C44B58 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cefixbt;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = cefixcv;
+			productReference = 8D07F2C80486CC7A007CD1D0 /* cefixbt.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "cefixbt" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* cefixcv */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D07F2BC0486CC7A007CD1D0 /* cefixbt */,
+				D4F412C70F5BE44E0052261D /* INSTALL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D07F2BF0486CC7A007CD1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D07F2C00486CC7A007CD1D0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4F412C60F5BE44E0052261D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../../libs\nrm cefixbt.framework.zip\nzip cefixbt.framework.zip -r cefixbt.framework/\n\n/usr/local/bin/svn commit --username hudson --password hudson -m \"cefixbt framework\" cefixbt.framework.zip\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D07F2C10486CC7A007CD1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D2E6BB1303D8E900E705FE /* Utils.cpp in Sources */,
+				D4D2E6BC1303D8E900E705FE /* TransformTripleBuffer.cpp in Sources */,
+				D4D2E6BD1303D8E900E705FE /* Shape.cpp in Sources */,
+				D4D2E6BF1303D8E900E705FE /* RigidBody.cpp in Sources */,
+				D4D2E6C01303D8E900E705FE /* PhysicsThread.cpp in Sources */,
+				D4D2E6C11303D8E900E705FE /* PhysicsController.cpp in Sources */,
+				D4D2E6C21303D8E900E705FE /* MotionState.cpp in Sources */,
+				D4D2E6C41303D8E900E705FE /* DebugPhysicsDrawer.cpp in Sources */,
+				D4D2E6C51303D8E900E705FE /* Constraints.cpp in Sources */,
+				D4D2E6C61303D8E900E705FE /* AppController.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4F412CD0F5BE4510052261D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D07F2BC0486CC7A007CD1D0 /* cefixbt */;
+			targetProxy = D4F412CC0F5BE4510052261D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FADC24308B4156D00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../libs\"";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../src/cefixbt_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../3rdParty/bullet/src\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../3rdParty/bullet/lib\"";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = cefixbt;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4FADC24408B4156D00ABE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../libs/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../libs\"";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../src/cefixbt_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../3rdParty/bullet/src\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../3rdParty/bullet/lib\"";
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = cefixbt;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		4FADC24708B4156D00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		4FADC24808B4156D00ABE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		D4F412C80F5BE44E0052261D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = INSTALL;
+			};
+			name = Debug;
+		};
+		D4F412C90F5BE44E0052261D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = INSTALL;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "cefixbt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC24308B4156D00ABE55E /* Debug */,
+				4FADC24408B4156D00ABE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "cefixbt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC24708B4156D00ABE55E /* Debug */,
+				4FADC24808B4156D00ABE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F412E40F5BE4A50052261D /* Build configuration list for PBXAggregateTarget "INSTALL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F412C80F5BE44E0052261D /* Debug */,
+				D4F412C90F5BE44E0052261D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
